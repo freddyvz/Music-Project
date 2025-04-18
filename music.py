@@ -6,3 +6,9 @@ pygame.init() #Initialized all pygame modules. Essential to call this before usi
 window = pygame.dsiplay.set_mode((500, 300)) # Creates a window with size 500 pixels and 300 pixels tall
 pygame.display.set_caption("Music Player") # Sets title of window
 
+# Set Up Colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+
+
+
