@@ -10,5 +10,12 @@ pygame.display.set_caption("Music Player") # Sets title of window
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
+# Sets music_file variable to path of the music file to play
+music_file = "music.mp3" 
+
+def play_music():
+  pygame.mixer.music.load(music_file)
+  pygame.mixer.music.play()
+
 
 
