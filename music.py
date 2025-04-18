@@ -23,5 +23,17 @@ button_height = 50
 button_x = (500 - button_width) // 2
 button_y = 100
 
+# Loop keeps application running
+running = True
+while running:
+  for event in pygame.event.get(): # Retrieves a list of all events that occured since the last time the loop ran
+    if event.type == pygame.QUIT:
+      running = False
+
+    if event.type == pygame.MOUSEBUTTONDOWN: # Mouse Button clic
+      mouse_x, mouse_y = pygame.mouse.get_pos() # Returns position of mouse cursor when the button was clicked
+      if button_x < mouse_x < button_x + button_width and button_y < mouse_y < button_y + button_height: # Checks if mouse click happened inside the bounds of the play button
+        play_music()
+
 
 
